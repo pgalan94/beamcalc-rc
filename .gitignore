@@ -1,0 +1,5 @@
+standalone.pyw
+/venv/
+/venv-ps/
+__pycache__/
+*.pyc
