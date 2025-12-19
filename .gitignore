@@ -3,3 +3,5 @@ standalone.pyw
 /venv-ps/
 __pycache__/
 *.pyc
+dist/
+*.egg-info/

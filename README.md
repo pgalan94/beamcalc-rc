@@ -10,16 +10,19 @@ pip install beamcalc-rc
 
 ## Example usage
 
-```
-from beamcalc import Beam, ReinforcedConcreteSection
+Right now, the script is still "very tied" to the old (legacy) code.
+I'll be refactoring this right away.
+For now, checkout the `example.py` file to use this lib as intended.
 
-b = Beam(s=ReinforcedConcreteSection(), gap=3.00)
-b.set_supports("simply")
-b.set_qloads(q=-10.00)
+## What's up
 
-b.solve_incrementally(nodes=20, steps=10)
+> Simply supported beams
 
-b.results.M  # nodal bending array
-b.results.V  # nodal shear array
-b.results.d  # nodal displacement array
-```
+## Up next
+
+> All beam support types (cantilever, fixed, etc.)
+> Continuous beams
+
+## Final thoughts
+
+Since this project uses "1-dimension finite elements approximation", I'm not planning in expanding this lib to 3d beams, like "U-shaped" balcony beams. My goal with this project is to decouple my initial script from tkinter, exposing a lib that can be used for beam solving without a GUI.
