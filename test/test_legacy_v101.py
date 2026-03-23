@@ -1,4 +1,4 @@
-from beamcalc import Beam, solve_beam_incrementally
+from beamcalc_legacy import Beam, solve_beam_incrementally
 
 beam_dict = {
     "name": "V101",
@@ -23,3 +23,6 @@ beam.add_elements()
 solved_beam = solve_beam_incrementally(beam, beam_dict["load_steps"])
 
 dfs = solved_beam.get_analysis_data()
+
+for df in dfs:
+    print(df)
