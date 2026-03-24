@@ -1,0 +1,1 @@
+# Maps solver output to domain results

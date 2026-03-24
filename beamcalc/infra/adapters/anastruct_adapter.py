@@ -1,0 +1,1 @@
+# Adapter between domain and anastruct

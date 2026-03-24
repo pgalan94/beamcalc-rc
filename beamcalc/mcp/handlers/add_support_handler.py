@@ -1,0 +1,1 @@
+# MCP handler for adding support
